@@ -1,0 +1,420 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Big+Shoulders+Display:wght@100..900&family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Inter:wght@100..900&family=Lexend+Deca:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Outfit:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Young+Serif&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Big+Shoulders+Display:wght@100..900&family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Inter:wght@100..900&family=Lexend+Deca:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Outfit:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Young+Serif&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    /* ### Primary */
+
+    --Very-Dark-Blue: hsl(243, 87%, 12%);
+    --Desaturated-Blue: hsl(238, 22%, 44%);
+    
+    /* ### Accent */
+    
+    --Bright-Blue: hsl(224, 93%, 58%);
+    --Moderate-Cyan: hsl(170, 45%, 43%);
+    
+    /* ### Neutral */
+    
+    --Light-Gray: hsl(0, 0%, 75%);
+    --Light-Grayish-Blue: hsl(240, 75%, 98%);
+
+    /* fuentes */
+    --raleway:"Raleway", sans-serif;
+    --open-sans: "Open Sans", sans-serif;
+
+    --paragraph: 16px;
+}
+
+body{
+    font-family: var(--open-sans);
+}
+
+.header{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 20px;
+}
+
+.header img{
+    width: 100px;
+    
+}
+
+.nav__link{
+    text-decoration: none;
+    margin: 0 8px;
+    color: var(--Very-Dark-Blue);
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.section{
+    display: flex;
+    flex-flow: column;
+    width: 100%;
+    text-align: center;
+}
+
+.section__img{
+    
+    width: 80%;
+    max-width: 700px;
+    margin: 30px auto;
+}
+
+.section__img img{
+    width: 100%;
+}
+
+.section__text{
+    margin: 20px 20px;
+}
+
+.section__title{
+    margin: 20px 0;
+    font-size: 26px;
+    font-family: var(--raleway);
+
+}
+
+.section__paragraph{
+    color: var(--Very-Dark-Blue);
+}
+
+.section__input{
+    margin: 40px auto;
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    flex-flow: column;
+    
+}
+
+.section--two{
+    padding: 40px 0;
+    margin: 40px 0 0 0;
+    position: relative;
+    background-color: var(--Light-Grayish-Blue);
+
+    .section__title{
+        margin-bottom: 30px;
+    }
+
+    .section__paragraph{
+        margin: 20px 0;
+    }
+
+    .btn{
+        text-decoration: none;
+        color: var(--Moderate-Cyan);
+        font-weight: 500;
+        font-size: 16px;
+    }
+
+    .section__green{
+        margin: 5px auto;
+        width: 60%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-bottom: 1.5px solid var(--Moderate-Cyan);
+    }
+
+    .section__green img{
+        width: 30px;
+        margin-left: 5px;
+    }
+
+
+}
+
+.section__card{
+    width: 80%;
+    margin: 40px auto;
+    padding:  5px 25px;
+    font-size: 15px;
+    cursor: pointer;
+    background-color: #fff;
+    text-align: left;
+    border-radius: 8px;
+    box-shadow: 2px 5px 20px 2px var(--Light-Gray);
+
+    .section__paragraph{
+        margin: 0px 0;
+    }
+
+}
+
+.card__img{
+    display: flex;
+    padding: 22px 0;
+
+    .card__ceo{
+        font-size: 12px;
+        color: black;
+    }
+}
+
+.card__img img{
+    width: 40px;
+    margin-right: 10px;
+    border-radius: 50%;
+}
+
+.section__card .quotes{
+    width: 20px;
+    margin-top: 20px;
+    margin-right: 90%;
+}
+
+
+input[type="text"]{
+    padding: 15px 20px;
+    font-size: 16px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    border: 2px solid var(--Very-Dark-Blue);
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+input[type="submit"]{
+    padding: 18px ;
+    border: none;
+    outline: none;
+    font-size: 18px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+    background-color: var(--Bright-Blue);
+}
+
+.section--three{
+    padding-top: 60px ;
+    padding-bottom: 60px;
+    font-family: var(--raleway);
+    background-color: var(--Desaturated-Blue);
+    color: #fff;
+
+    .section__subtitle{
+        margin: 20px 0;
+    }
+
+    .section__paragraph{
+        padding: 0 20px;
+        margin: 20px ;
+        color: #fff;
+        font-size: 16px;
+    }
+}
+
+.section__input--three{
+
+    width: 70%;
+
+    input[type="text"]{
+        padding: 15px 20px;
+        font-size: 14px;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        
+        border-radius: 2px;
+        margin-bottom: 15px;
+    }
+    
+    input[type="submit"]{
+        padding: 18px ;
+        border: none;
+        outline: none;
+        font-size: 14px;
+        font-weight: 600;
+        letter-spacing: 1px;
+        color: white;
+        cursor: pointer;
+        border-radius: 2px;
+        background-color: var(--Bright-Blue);
+    }
+    
+}
+
+/* fin section three */
+
+
+/* footer */
+
+.footer{
+    padding: 80px 30px;
+    background-color: var(--Very-Dark-Blue);
+
+
+    .section__logo img{
+        margin-bottom: 40px;
+        width: 200px;
+    }
+
+    .footer__contact{
+        display: flex;
+        flex-flow: column;
+    }
+
+    .img__icon{
+        width: 20px;
+        margin: 10px 0;
+    }
+
+
+}
+
+
+.footer__link{
+    display: flex;
+    flex-direction: column;
+    margin: 40px 0;
+
+    .link{
+        font-family: var(--open-sans);
+        font-size: 18px;
+        text-decoration: none;
+        color: #fff;
+        margin: 7px 0;
+    }
+}
+
+
+.footer__icons{
+    display: flex;
+    justify-content: center;
+    
+
+    .icons__link{
+        margin: 0 10px;
+        border: 1px solid #fff;
+        padding: 15px 15px;
+        border-radius: 50%;
+
+        .fa-brands{
+            font-size: 24px;
+            color: #fff;
+        }
+    }
+}
+
+/* fin footer */
+
+
+/* media querys */
+@media (min-width:1408px){
+    .header{
+        padding: 60px 100px;
+    }
+
+    .section--one{
+        height: 70vh;
+        display: flex;
+        flex-flow: row;
+        align-items: center;
+        justify-content: space-around;
+
+        .section__img{
+            width: 40%;
+        }
+
+        .section__text{
+            width: 45%;
+            margin-top: 50px;
+            margin-right: 180px;
+        }
+    }
+
+    .section--two{
+        display: flex;
+        flex-flow: row-reverse ;
+        justify-content: space-around;
+        align-items: center;
+        text-align: start;
+        
+        .section__text{
+            width: 40%;
+            margin-left: 12rem;
+        }
+
+        .section__img{
+            width: 50%;
+        }
+
+        .section__card{
+            width: 50%;
+            margin: 40px 0;
+        }
+
+        .section__green{
+            margin: 5px 0;
+            width: 25%;
+        }
+    }
+
+    .section--three{
+        display: flex;
+        min-height: 500px;
+        flex-direction: row;
+        justify-content: start;
+        align-items: center;
+        text-align: start;
+
+        .section__text{
+            width: 40%;
+            margin-left: 180px;
+
+            .section__subtitle{
+                margin: 0 35px;
+                font-size: 32px;
+            }
+
+            .section__paragraph{
+                font-size: 18px;
+            }
+        }
+
+        .section__input--three{
+            width: 25%;
+            
+        }
+    }
+
+    .section__input{
+        width: 60%;
+    }
+
+    .nav__link{
+        font-size: 22px;
+        margin: 0 28px;
+    }
+
+    .section__title{
+        font-size: 40px;
+    }
+
+    .section__paragraph{
+        margin: 0 auto;
+        font-size: 22px;
+        width: 80%;
+    }
+
+    .header img{
+        width: 180px;
+    }
+
+}
+

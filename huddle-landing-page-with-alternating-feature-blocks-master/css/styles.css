@@ -1,0 +1,422 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Big+Shoulders+Display:wght@100..900&family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Inter:wght@100..900&family=Lexend+Deca:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Outfit:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Young+Serif&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Big+Shoulders+Display:wght@100..900&family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Inter:wght@100..900&family=Lexend+Deca:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Outfit:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Young+Serif&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    /* ### Primary */
+
+    --Pink: hsl(322, 100%, 66%);
+
+    /* ### Neutral */
+
+    --Very-Pale-Cyan: hsl(193, 100%, 96%);
+    --Very-Dark-Cyan: hsl(192, 100%, 9%);
+    --Grayish-Blue: hsl(208, 11%, 55%);
+
+    /* fuentes */
+
+    --poppins: "Poppins", sans-serif;
+    --open-sans: "Open Sans", sans-serif;
+}
+
+body{
+    background-color: var(--Very-Pale-Cyan);
+}
+
+/* header seccion */
+
+.header{
+    width: 100%;
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 20px 20px;
+
+    .header__logo{
+    
+        img{
+            width: 120px;
+            cursor: pointer;
+        }
+    
+    }
+
+    .header__btn{
+        padding: 5px 26px;
+        border: none;
+        outline: none;
+        border-radius: 14px;
+        box-shadow: 2px 4px 18px 0 var(--Grayish-Blue);
+        cursor: pointer;
+        font-family: var(--poppins);
+        font-weight: 500;
+        transition: .2s linear;
+    }
+}
+
+/* container all */
+
+.container{
+    width: 100%;
+    padding: 40px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align:center ;
+    gap: 22px;
+
+}
+
+/* sc1 modificador */
+
+.sc1{
+    background-image: url(../images/bg-hero-mobile.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+
+}
+
+/* Section text */
+
+.text__title{
+    font-family: var(--poppins);
+    font-size: 22px;
+    margin: 15px 0;
+}
+
+.text__paragraph{
+    font-family: var(--open-sans);
+    margin: 15px 5px;
+}
+
+.btn{
+    margin: 12px 0 25px;
+    padding: 15px 50px;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    background-color: var(--Pink);
+    color: #fff;
+    transition: .2s ease-in;
+    border: none;
+    outline: none;
+    border-radius: 30px;
+    
+}
+
+/* Section imagen */
+
+.section__img--sc1{
+    width: 95%;
+}
+
+.section__img img{
+    width: 100%;
+}
+
+/* sc2 modificador */
+
+.sc2{
+    background-color: #fff;
+}
+
+.section__img{
+    width: 80%;
+    max-width: 370px;
+}
+
+/* cards */
+
+.cards{
+    width: 90%;
+    max-width: 1800px;
+    padding: 30px 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    background-color: #fff;
+    box-shadow: 5px 5px 20px 0px #ededed;
+    border-radius: 20px;
+    transition: .3s linear;
+}
+
+.text__title--card{
+    margin-top: 28px;
+}
+
+/* cards build modificador */
+
+.cards--build{
+    width: 99%;
+    max-width: 800px;
+    margin-top: -80px;
+    padding: 20px 5px;
+    background-color: #fff;
+    position: relative;
+    top: 105px;
+    z-index: 100;
+    border: 1px solid #767676;
+    box-shadow: none;
+}
+
+/* container footer modificador */
+
+.container-f1{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    
+}
+
+/* footer seccion */
+
+.footer{
+    padding: 8.5rem 1rem 50px 1rem ;
+    background-color: var(--Very-Dark-Cyan);
+    color: white;
+    font-size: 24px;
+    z-index: 0;
+}
+
+.footer-contact{
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-contact img{
+    width: 200px;
+    margin-bottom: 20px;
+    
+}
+
+ion-icon{
+    margin: 10px;
+}
+
+/* footer link */
+
+.footer__link{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    font-family: var(--poppins);
+    font-size: 20px;
+}
+
+.links{
+    margin: 8px 5px;
+    text-decoration: none;
+    color: #fff;
+}
+
+/* footer social */
+
+.footer__social{
+    margin: 20px 0 0 0px ;
+    align-self: center;
+
+}
+
+.links--social{
+    margin: 7px;
+    padding: 13px 15px;
+    background-color: transparent;
+    transition: .3s linear;
+    border-radius: 50%;
+}
+
+.ion{
+    margin: auto;
+    font-size: 28px;
+}
+
+/* footer copyright */
+
+.footer__copyright{
+    margin: 50px 0;
+    align-self: center;
+}
+
+.copy__paragraph{
+    margin: 8px 0;
+    font-family: var(--poppins);
+    font-size: 16px;
+}
+
+/* botones hover */
+
+.header__btn:hover{
+    background-color: var(--Pink);
+}
+
+.cards:hover{
+    border: 1px solid #0004;
+    scale: 1.03;
+}
+
+.btn:hover{
+    background-color: rgb(220, 6, 170);
+}
+
+
+.ion{
+    transition: .1s ease-in-out;
+}
+
+.links--social:hover{
+    color: #1877f2;
+}
+
+.ion-ig:hover{
+    color: #D43089;
+}
+
+.ion-twi:hover{
+    color: #1DA1F2;
+}
+
+/* media querys destok */
+
+
+
+@media (min-width:1200px){
+    .header{
+        padding: 30px 80px;
+    
+        .header__logo{
+        
+            img{
+                width: 200px;
+            }
+        
+        }
+    
+        .header__btn{
+            padding: 12px 60px;
+            font-size: 18px;
+            border-radius: 20px;
+        }
+    }
+
+    .sc1{
+        display: flex;
+        flex-direction: row;
+        text-align: start;
+        min-height: 75vh;
+        gap: 62px;
+
+        background-image: url(../images/bg-hero-desktop.svg);
+
+        .section__text{
+            width: 35%;
+            align-self: center;
+
+            .text__title{
+                font-size: 44px;
+            }
+
+            .text__paragraph{
+                font-size: 20px
+            }
+        }
+    }
+
+    .btn{
+        margin: 18px 0 25px;
+        padding: 20px 60px;
+        font-size: 20px;    
+    }
+
+    .section__img{
+        width: 80%;
+        max-width: 670px;
+    }
+    
+    .cards{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        text-align: start;
+        gap: 20px;
+
+        .section__text{
+            width: 38%;
+
+            .text__title{
+                font-size: 32px;
+            }
+
+            .text__paragraph{
+                font-size: 20px;
+            }
+        }
+    }
+
+    .cards__img{
+        align-self: center;
+        width: 60%;
+    }
+
+    .cards__img img{
+        max-width: 500px;
+
+    }
+
+    .cards--build{
+        text-align: center;
+
+        .section__text--cards{
+            width: 100%;
+        }
+
+    }
+
+    .footer{
+        display: flex;
+        flex-direction: row;
+        align-items: start;
+        justify-content: space-around;
+    }
+
+    .ion{
+        font-size: 38px ;
+    }
+
+    .links{
+        font-size: 22px;
+    }
+
+    .copy__paragraph{
+        font-size: 20px;
+    }
+
+    .footer-contact img{
+        width: 230px;
+    }
+
+    ion-icon{
+        font-size: 30px;
+    }
+
+    .cards--2{
+        flex-direction: row-reverse;
+
+
+
+    }
+}
+

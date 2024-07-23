@@ -1,0 +1,139 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main-pricing{
+    width: 100%;
+    /* min-height: 22vh; */
+    padding: 80px 0;
+    /* background-color: #0001; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn-pricing{
+    padding: 12px 20px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    font-size: 16px;
+    margin: 0 2px;
+    font-weight: 600;
+    border: thin solid #0001;
+    cursor: pointer;
+}
+
+.btn-pricing--two{
+    background-color: #fff;
+    border: thin solid #0001;
+}
+
+.main__title{
+    font-size: 42px;
+    margin-bottom: 15px;
+
+}
+
+.main__paragraph{
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.footer{
+    border-top: 1px solid #0003;
+}
+
+.section-cards{
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    gap: 22px   ;
+    margin: 12px;
+    padding-bottom: 60px ;
+
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    /* border: thin solid #000; */
+    gap: 12px;
+    border-radius: 8px;
+    padding: 30px 35px;
+    width: 95%;
+    max-width: 600px;
+    box-shadow: 5px 4px 30px #0003;
+
+}
+
+.card__plan{
+    font-weight: 400;
+    font-size: 16px;
+    /* margin: 10px 0; */
+}
+
+.card__title{
+    font-size: 20px;
+    /* margin: 10px 0; */
+}
+
+
+#span-card{
+    font-size: 44px;
+    color: #000;
+}
+
+.list__item--two{
+    font-size: 20px;
+    color: #0008;
+    margin: 8px 40px;
+}
+
+
+.section-faq{
+    width: 100%;
+    padding: 50px 25px;
+    
+}
+
+.faq__title{
+    font-size: 24px;
+    margin: 10px 0;
+}
+
+.faq{
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.faq__paragraph{
+    color: #0008;
+    margin: 10px 0;
+}
+
+@media (min-width:768px){
+    .section-cards{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        justify-items: center;
+        gap: 22px   ;
+        margin: 12px;
+
+    }
+    
+    .card{
+        display: flex;
+        flex-direction: column;
+        /* border: thin solid #000; */
+        gap: 12px;
+        border-radius: 8px;
+        padding: 60px 35px;
+        width: 95%;
+        /* max-width: 400px; */
+        box-shadow: 5px 4px 30px #0003;
+    
+    }
+}

@@ -1,0 +1,220 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Big+Shoulders+Display:wght@100..900&family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Inter:wght@100..900&family=Karla:ital,wght@0,200..800;1,200..800&family=League+Spartan:wght@100..900&family=Lexend+Deca:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Outfit:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Young+Serif&display=swap');
+
+
+:root{
+    --Dark-Gray: hsl(0, 0%, 63%);
+    --Black: hsl(0, 0%, 0%);
+    --White: hsl(0, 0%, 100%);
+    --Very-Dark-Gray: hsl(0, 0%, 27%);
+
+    /* fuente */
+    --spartan: "League Spartan", sans-serif;
+
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: var(--spartan);
+}
+
+.main{
+    display: grid;
+    max-width: 2200px;
+    min-height: 100vh;
+    margin: 0 auto;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(5, max-content);
+    grid-template-areas: 
+    "main"
+    "cta"
+    "image1"
+    "about"
+    "image2";
+}
+
+.container{
+    width: 90%;
+    margin: 0px auto;
+    overflow: hidden;
+    padding: 50px 0;
+}
+
+.section{
+    grid-area: main;
+    justify-content: space-between;
+    min-height: 550px;
+    background-image: url(../images/mobile-image-hero-1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.section__nav{
+    display: flex;
+}
+
+.nav__links{
+    display: none;
+}
+
+.main__logo{
+    margin: 0 auto;
+}
+
+/* cta */
+
+.cta{
+    grid-area: cta;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    
+}
+
+.cta__title{
+    font-size: 32px;
+}
+
+.cta__paragraph{
+    font-size: 18px;
+    color: var(--Dark-Gray);
+    line-height: 1.4;
+}
+
+.cta__link{
+    margin-top: 22px;
+    text-decoration: none;
+    color: var(--Black);
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 10px;
+    font-size: 20px;
+}
+
+/* image1 */
+
+.image1{
+        grid-area: image1;
+}
+
+.image1 img{
+    width: 100%;
+    min-height: 250px;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* about */
+
+.about{
+    grid-area: about;
+    display: flex;
+    flex-direction: column;
+    gap: 14px ;
+}
+
+.cta__title--about{
+    text-transform: uppercase;
+    font-size: 24px;
+    letter-spacing: 4px;
+}
+
+/* image2 */
+
+.image2{
+    grid-area: image2;
+    min-height: 250px;
+    height: 100%;
+    
+}
+
+.image2 img{
+    width: 100%;
+    min-height: 250px;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+.main__controls{
+    grid-area: main;
+    justify-self: end;
+    align-self: flex-end;
+    width: 100px;
+    height: 50px;
+    background-color: var(--Black);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.main__control{
+    height: 40%;
+    cursor: pointer;
+
+}
+
+@media (min-width:778px){
+
+    .container{
+        width: 85%;
+        padding: 70px 0;
+    }
+
+    .main{
+        display: grid;
+        width: 100%;
+        margin: 0 auto;
+        grid-template-columns: repeat(7, 1fr);
+        grid-template-rows: repeat(2, max-content);
+        grid-template-areas: 
+        "main main main main cta cta cta" 
+        "main main main main cta cta cta" 
+        "main main main main cta cta cta" 
+        "image1 image1 about about about image2 image2" 
+        "image1 image1 about about about image2 image2" ;
+    }
+    
+    .section{
+        background-image: url(../images/desktop-image-hero-1.jpg);
+    }
+
+    .main__controls{
+        grid-area: cta;
+        justify-self: start;
+        align-self: flex-end;
+        width: 200px;
+        height: 65px;
+    }
+
+    .nav__links{
+        display: grid;
+        grid-auto-flow: column;
+        gap: 1em;
+        margin-left: 10%;
+    }
+
+    .links__list{
+        list-style: none;
+
+    }
+
+    .link{
+        font-size: 18px;
+        text-decoration: none;
+        color: var(--White);
+    }
+
+    .main__logo{
+        margin: auto 0;
+    }
+
+    .main__hamburger{
+        display: none;
+    }
+}
